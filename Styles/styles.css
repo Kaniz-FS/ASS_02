@@ -16,10 +16,6 @@
   margin: 0 auto;
 }
 
-.head {
-  /* margin: 0 150px; */
-}
-
 .nav {
   max-width: 1140px;
   margin-top: 30px;
@@ -88,11 +84,79 @@
   color: rgba(0, 0, 0, 0.5);
   width: 888px;
   margin-bottom: 50px;
-  /* display: flex;
-  justify-content: center; */
+}
+.plants-img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+}
+
+.plants-lily {
+  margin-top: 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 800px;
+  text-align: center;
+}
+.plants-usd {
+  margin-top: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 800px;
+  text-align: center;
+}
+
+.btn-all {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700px;
+  margin-top: 30px;
+  border: none;
+  background-color: #e95a08;
+  width: 100%;
+  padding: 19px 80px;
+  color: #ffffff;
+}
+
+.flowers-container {
+  max-width: 1140px;
+  display: flex;
+  justify-content: center;
+  margin-top: 210px;
+  gap: 60px;
+}
+.flowers-img {
+  width: 540px;
+  height: auto;
+}
+
+.badge {
+  width: 286px;
+  background: none;
+  transform: translateX(345px) translateY(-725px);
+}
+.flowers-content {
+  max-width: 540px;
+  padding: 38px 0;
+}
+.flowers-title {
+  font-size: 50px;
+  font-weight: 800px;
+  font-family: "Noto Serif", serif;
+  margin-bottom: 20px;
+}
+.flowers-list {
+  font-size: 22px;
+  font-weight: 400px;
+  font-family: "Inter", serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+.flowers-list li {
+  margin-bottom: 20px;
 }
 
 /* RESPONSIVE PART */
+
 @media screen and (max-width: 576px) {
   .li1,
   .li2,
@@ -131,5 +195,50 @@
   }
   .banner-para {
     font-size: 14px;
+  }
+
+  .plants-content {
+    max-width: 392px;
+  }
+
+  .plants-title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 16px;
+  }
+
+  .plants-para {
+    max-width: 336px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 28px;
+  }
+
+  .plants-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    justify-content: center;
+    /* align-items: center; */
+    width: 362px;
+    row-gap: 30px;
+  }
+  .plants-item img {
+    width: 175px;
+    height: auto;
+  }
+  .plants-lily {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .plants-usd {
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .btn-all {
+    font-size: 16px;
+    padding: 19px 30px;
+    /* margin-bottom: 28px; */
   }
 }
