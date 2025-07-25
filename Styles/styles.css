@@ -12,8 +12,10 @@
 }
 
 * {
-  background-color: rgb(243, 243, 255);
   margin: 0 auto;
+}
+body {
+  background-color: rgb(243, 243, 255);
 }
 
 .nav {
@@ -124,6 +126,7 @@
   justify-content: center;
   margin-top: 210px;
   gap: 60px;
+  position: relative;
 }
 .flowers-img {
   width: 540px;
@@ -131,8 +134,10 @@
 }
 
 .badge {
+  position: absolute;
   width: 286px;
   background: none;
+  display: inline-block;
   transform: translateX(345px) translateY(-725px);
   filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
 }
@@ -157,6 +162,184 @@
   margin-bottom: 20px;
 }
 
+.deals {
+  max-width: 1140px;
+  height: auto;
+  margin-top: 130px;
+}
+.deals-content {
+  text-align: center;
+}
+
+.deals-title {
+  font-size: 50px;
+  font-weight: 800;
+  font-family: "Noto Serif", serif;
+  margin-bottom: 16px;
+}
+.deals-para {
+  font-size: 22px;
+  font-weight: 400px;
+  font-family: "Inter", serif;
+  color: rgba(0, 0, 0, 0.5);
+  width: 888px;
+  margin-bottom: 120px;
+}
+.deals-title span {
+  color: #e95a08;
+}
+
+.offer-container {
+  max-width: 1140px;
+  display: flex;
+  gap: 28px;
+  margin-bottom: 120px;
+}
+.bloom-ana-offer {
+  display: flex;
+  flex-direction: column;
+  width: 367px;
+  height: 425px;
+  gap: 25px;
+}
+
+.bloom {
+  width: 367px;
+  height: 200px;
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  position: relative;
+  /* text-align: center; */
+}
+
+.bloom-title,
+.ana-title {
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Noto Serif", serif;
+  color: #ffffff;
+}
+.ana {
+  width: 367px;
+  height: 200px;
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  position: relative;
+}
+
+.bloom a,
+.ana a {
+  margin-top: 19px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: "Inter", serif;
+  position: relative;
+  z-index: 2;
+}
+.bloom::before,
+.ana::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-radius: 14px;
+}
+.zabo {
+  width: 753px;
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  position: relative;
+}
+.zabo-title {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Noto Serif", serif;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+.zabo a {
+  margin-top: 15px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: "Inter", serif;
+  position: relative;
+  z-index: 2;
+}
+
+.zabo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-radius: 22px;
+}
+
+.bunch-container {
+  width: 100%;
+  height: 533px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+.bunch-title {
+  font-size: 50px;
+  font-weight: 800;
+  font-family: "Noto Serif", serif;
+  color: #ffffff;
+}
+.bunch-input {
+  display: flex;
+  width: fit-content;
+  height: 50px;
+  margin-top: 23px;
+}
+.input {
+  border: none;
+  width: 644px;
+  padding: 15px 20px 15px;
+  font-size: 16px;
+  font-family: "Inter", serif;
+}
+
+.btn {
+  border: none;
+  width: 186px;
+  padding: 19px 53px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #e95a08;
+  color: #ffffff;
+  font-family: "Inter", serif;
+}
 /* RESPONSIVE PART */
 
 @media screen and (max-width: 576px) {
@@ -168,6 +351,8 @@
   .nav {
     flex-direction: row;
     gap: 185px;
+    display: flex;
+    justify-content: center;
     align-items: center;
     width: 361px;
   }
@@ -175,7 +360,8 @@
     width: 70px;
   }
 
-  .list {
+  .li4 {
+    white-space: nowrap;
     font-size: 18px;
   }
 
@@ -281,7 +467,76 @@
     margin-bottom: 16px;
   }
 
-  .badge {
+  .badge-img {
     display: none;
+  }
+  .deals-content {
+    max-width: 393px;
+  }
+
+  .deals-title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 16px;
+  }
+
+  .deals-para {
+    max-width: 336px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+  .offer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+    width: 361px;
+    height: 581px;
+    gap: 20px;
+  }
+
+  .bloom,
+  .ana {
+    width: 361px;
+    height: 184px;
+  }
+
+  .zabo {
+    width: 361px;
+    height: 184px;
+    border-radius: 14px;
+  }
+  .zabo::before {
+    border-radius: 14px;
+  }
+  .bloom-title,
+  .ana-title,
+  .zabo-title {
+    font-size: 20px;
+  }
+  .bloom a,
+  .ana a,
+  .zabo a {
+    font-size: 16px;
+  }
+  .bunch-container {
+    max-width: 100%;
+    height: 275px;
+  }
+  .bunch-title {
+    font-size: 20px;
+  }
+  .bunch-input {
+    height: 50px;
+  }
+  .input {
+    width: 218px;
+    font-size: 16px;
+  }
+  .btn {
+    width: 103px;
+    font-size: 16px;
+    padding: 19px 12px;
   }
 }
