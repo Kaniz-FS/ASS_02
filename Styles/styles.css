@@ -411,15 +411,15 @@ body {
   }
   .nav {
     flex-direction: row;
-    gap: 150px;
+    gap: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 361px;
-    padding: 0 5px;
   }
   .nav img {
-    width: 70px;
+    width: 63px;
+    height: 38px;
   }
 
   .li4 {
