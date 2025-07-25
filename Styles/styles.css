@@ -411,11 +411,12 @@ body {
   }
   .nav {
     flex-direction: row;
-    gap: 185px;
+    gap: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 361px;
+    padding: 0 5px;
   }
   .nav img {
     width: 70px;
